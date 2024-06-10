@@ -115,7 +115,7 @@ const ProjetListe= () => {
               </Link>
             </div>
             <div className="max-w-sm m-2  rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full shadow-lg bg-[#B9DEC3] " style={{ maxWidth: '300px' }}>
-              <Link href="#">
+              <Link href="projet3">
                 <figure className="cursor-pointer ">
                   <div>
                     <Image

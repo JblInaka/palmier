@@ -1,18 +1,18 @@
 "use client";
 
-import React from "react";
-//import Projets from "@/components/projets/Projets";
-import Projet3 from "./Projet3";
+import Projet3Intro from "./Projet3Intro";
+import Projet3Partenaire from "./Projet3Partenaire";
+import Projet3Probleme from "./Projet3Probleme";
+import Projet3Solution from "./Projet3Solution";
 
-const Page: React.FC = () => {
+
+export default function Projet1() {
   return (
-    <div
-      className="bg-cover"
-      style={{ backgroundImage: "url('/motif_background.png')" }}
-    >
-      <Projet3 />
-    </div>
+      <div>
+        <Projet3Intro />
+        <Projet3Probleme />
+        <Projet3Solution />
+        <Projet3Partenaire />
+      </div>
   );
-};
-
-export default Page;
+}

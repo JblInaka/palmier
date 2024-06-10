@@ -2,18 +2,18 @@ import React from "react";
 import Image from "next/image";
 
 const Projet1Partenaire = () => {
-  const partenaire = require("../../public/projets/projet2/projet2partneraire.png");
+  const partenaire = require("../../public/projets/projet3/projet3_partenaire.png");
 
   return (
     <section className=" mx-24 grid grid-cols-12 min-h-screen bg-cover rounded-3xl" style={{backgroundImage: "url('./BAD.png')", backgroundSize: "100% 100%"}}>
-      <h2 className="row-1 col-span-12 text-5xl text-justify font-bold mb-14" style={{ fontFamily: "'Swanky and Moo Moo', cursive" }}    >
+      <h2 className="row-1 col-span-12 text-5xl text-justify font-bold mb-14" style={{ fontFamily: "'Swanky and Moo Moo', cursive" }} >
         Partenaires locaux
       </h2>
       <div className="row-2 row-span-2 col-span-12 grid grid-cols-12  ">
         <div className=" col-span-8 rounded-r-3xl">
-          <div className=" flex justify-center items-center  bg-cover bg-center " style={{ backgroundImage: "url('/partenaire2Projet.png')"}}>
+          <div className=" flex justify-center items-center  bg-cover bg-center " style={{ backgroundImage: "url('/partenaire3Projet.png')"}}>
             <Image
-              className=" w-[90%] h-[70%]"
+              className=" w-[80%] rounded-3xl	 p-4"
               src={partenaire}
               alt="video fille souriante"
             />
@@ -21,23 +21,19 @@ const Projet1Partenaire = () => {
           <div className="mt-10 mb-10">
             <h3 className="font-bold text-xl pb-4 text-center text-green-700/55">
               Association
-              APEENOSA – ONG
+              Éducation pour Tous      
             </h3>
             <p className="mt-1">
-              Nous sommes un groupe d'organisations locales engagées dans le
-              développement de Parakou l’’association APEENOSA – ONG. Ensemble,
-              nous travaillons pour améliorer les conditions de vie dans notre
-              communauté. Nous tenons à exprimer notre profonde gratitude pour
-              les améliorations apportées aux conditions d'hygiène et
-              d'assainissement dans deux écoles primaires de Parakou. Ces
-              efforts ont considérablement amélioré la santé et le bien-être des
-              élèves, en leur fournissant des installations sanitaires modernes
-              et en les éduquant sur les bonnes pratiques d'hygiène. Nous
-              remercions tous ceux qui ont contribué à ce projet. Votre soutien
-              a été essentiel pour transformer les écoles en environnements plus
-              sûrs et plus propices à l'apprentissage. --- L’association
-              APEENOSA – ONG
-
+              Nous sommes l'association "Éducation pour Tous", composée d'enseignants bénévoles,
+              de membres de la communauté et de parents, travaillant en partenariat avec 
+              les écoles de Vernier pour offrir un soutien scolaire aux élèves. 
+              Notre objectif est d'aider les élèves à surmonter leurs difficultés académiques 
+              en leur fournissant un soutien personnalisé. Nous organisons des séances 
+              de tutorat régulières et travaillons en étroite collaboration avec les écoles 
+              pour identifier les besoins des élèves. Notre engagement est de créer 
+              un environnement accueillant où chaque enfant se sent soutenu et valorisé, 
+              afin de leur offrir des opportunités d'apprentissage équitables et les aider 
+              à atteindre leur plein potentiel académique.
             </p>
           </div>
           <div className="mt-12 pt-4">
@@ -56,7 +52,7 @@ const Projet1Partenaire = () => {
             <div className="mb-5 divide-y-4">
               <div className="carousel-item  ">
                 <Image
-                  src="/projets/projet2/projet2_temoignage1.jpeg"
+                  src="/projets/projet3/projet3_temoignage1.jpeg"
                   width={200}
                   height={8}
                   alt=""
@@ -64,25 +60,13 @@ const Projet1Partenaire = () => {
                 />
               </div>
               <p className="italic">
-                "Avant, les toilettes étaient sales et ça sentait mauvais. Maintenant, elles sont très propres " - Jean Biikolo
+                "Je suis reconnaissante envers les enseignants et les organisateurs du programme pour leur aide et leur soutien" - Malik             
               </p>
             </div>
             <div className="mb-4 divide-y-4">
               <div className="carousel-item  ">
                 <Image
-                  src="/projets/projet2/projet2_temoignage2.jpeg"
-                  width={200}
-                  height={8}
-                  alt=""
-                  className="mb-3 rounded-full"
-                />
-              </div>
-              <p className="italic">" Grâce aux nouvelles installations et à l'entretien régulier, nos élèves sont en meilleure santé et plus heureux." - Kodjo</p>
-            </div>
-            <div className="divide-y-4">
-              <div className="carousel-item  ">
-                <Image
-                  src="/projets/projet2/projet2_temoignage3.jpeg"
+                  src="/projets/projet3/projet3_temoignage2.jpeg"
                   width={200}
                   height={8}
                   alt=""
@@ -90,7 +74,21 @@ const Projet1Partenaire = () => {
                 />
               </div>
               <p className="italic">
-                " Je tiens à remercier tous ceux qui ont amélioré les conditions d'hygiène à l'École Primaire de Parakou Centre. " - Amadou
+                "Grâce aux enseignants du programme, j'ai commencé à voir des progrès dans mes résultats." - Sabrina              
+              </p>
+            </div>
+            <div className="divide-y-4">
+              <div className="carousel-item  ">
+                <Image
+                  src="/projets/projet3/projet3_temoignage3.jpeg"
+                  width={200}
+                  height={8}
+                  alt=""
+                  className="mb-3 rounded-full"
+                />
+              </div>
+              <p className="italic">
+                "Rencontrer d'autres enfants dans la même situation que moi m'a également permis de me sentir soutenu et encouragé. Grâce à ce programme, je crois en mes capacités et je suis déterminé à réussir à l'école pour pouvoir réaliser mes rêves pour l'avenir” - Marco
               </p>
             </div>
           </div>

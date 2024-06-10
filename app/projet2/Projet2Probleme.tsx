@@ -15,14 +15,14 @@ const Projet1Probleme = () => {
           Problématique
         </h2>
       </div>
-      <div className=" row-start-2 row-span-3 col-span-12 grid grid-cols-12 px-3 py-4 ">
+      <div className=" row-start-2 row-span-3 col-span-12 grid grid-cols-12 px-3 py-3 ">
         <div className=" col-span-7 mr-2 ">
           <Image
             src={problematik}
             layout="responsive"
             className="rounded-3xl"
-            width={1600}
-            height={900}
+            width={1200}
+            height={500}
             alt="Pollution"
           />
         </div>
