@@ -19,10 +19,10 @@ const Projet1Intro = () => {
         </div>
       </div>
 
-      <div className="col-span-12 px-4">
-        <div className="bg-white rounded-xl shadow-sm overflow-hidden pt-5 col-span-12">
+      <div className="col-span-12 px-4 ">
+        <div className=" bg-white rounded-xl shadow-sm overflow-hidden mt-5 col-span-12 border-green-700 border ">
           <div className="relative h-6 flex items-center justify-center">
-            <div className="absolute top-0 bottom-0 left-0 rounded-lg w-[100%] bg-green-700"></div>
+            <div className="absolute top-0 bottom-0 left-0 rounded-lg w-[100%] bg-green-700 "></div>
             <div className="relative text-white font-medium text-sm">100% - réalisé</div>
           </div>
         </div>

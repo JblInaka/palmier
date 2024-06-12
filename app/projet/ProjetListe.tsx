@@ -115,7 +115,7 @@ const ProjetListe= () => {
               </Link>
             </div>
             <div className="max-w-sm m-2  rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full shadow-lg bg-[#B9DEC3] " style={{ maxWidth: '300px' }}>
-              <Link href="projet3">
+              <Link href="/projet3">
                 <figure className="cursor-pointer ">
                   <div>
                     <Image
@@ -162,7 +162,7 @@ const ProjetListe= () => {
               </Link>
             </div> 
             <div className="max-w-sm m-2  rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full shadow-lg bg-[#B9DEC3] " style={{ maxWidth: '300px' }}>
-              <Link href="#">
+              <Link href="/projet4">
                 <figure className="cursor-pointer ">
                   <div>
                     <Image
@@ -175,7 +175,7 @@ const ProjetListe= () => {
                      />
                   </div>
                   <div className="  bg-amber-500 text-white text-center text-bold text-[17px] font-medium px-[8px] ml-4 mr-4 mt-4 pt-[5px] flex items-center ">
-                    <p className="px-5">Réfection de l’école </p> 
+                    <p className="px-5">Réfection d’une école </p> 
                   </div>
                 </figure>    
                 <figcaption>

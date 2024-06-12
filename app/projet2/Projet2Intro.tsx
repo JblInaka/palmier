@@ -20,7 +20,7 @@ const Projet2Intro = () => {
       </div>
 
       <div className="col-span-12 px-4">
-        <div className="bg-white rounded-xl shadow-sm overflow-hidden pt-5 col-span-12">
+        <div className="bg-white rounded-xl shadow-sm overflow-hidden mt-5 col-span-12 border-amber-500 border">
           <div className="relative h-6 flex items-center justify-center">
             <div className="absolute top-0 bottom-0 left-0 rounded-lg w-[70%] bg-amber-500"></div>
             <div className="relative text-white font-medium text-sm">70% - réalisé</div>

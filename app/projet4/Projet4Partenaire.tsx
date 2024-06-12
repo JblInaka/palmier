@@ -1,44 +1,28 @@
 import React from "react";
-
 import Image from "next/image";
 
-const Projet4Partenaires = () => {
-  const partenaire = require("../../../public/projets/projet4/projet4_partenaires.jpeg");
+const Projet4Partenaire = () => {
+  const partenaire = require("../../public/projets/projet4/projet4_partenaires.jpeg");
 
   return (
-    <section
-      className="mt-10 mx-24 grid grid-rows-6 grid-cols-12 min-h-screen bg-cover"
-      style={{
-        backgroundImage: "url('./BAD.png')",
-        backgroundSize: "100% 100%",
-      }}
-    >
-      <div className="row-end-1 col-span-12 ">
-        <h2
-          className=" text-5xl text-justify pl-5 ml-12 font-bold mb-3"
-          style={{ fontFamily: "'Swanky and Moo Moo', cursive" }}
-        >
-          Partenaires locaux
-        </h2>
-      </div>
-      <div className=" row-start-1 row-span-5 col-span-12 grid grid-cols-12 ">
-        <div className="grid grid-rows-3 col-span-8">
-          <div
-            className="row-start-1 row-span-2 bg-cover bg-center flex justify-center items-center rounded-r-3xl"
-            style={{ backgroundImage: "url('./partenaire.png')" }}
-          >
+    <section className=" mx-24 grid grid-cols-12 min-h-screen bg-cover rounded-3xl" style={{backgroundImage: "url('./BAD.png')", backgroundSize: "100% 100%"}}>
+      <h2 className="row-1 col-span-12 text-5xl text-justify font-bold mb-14" style={{ fontFamily: "'Swanky and Moo Moo', cursive" }} >
+        Partenaires locaux
+      </h2>
+      <div className="row-2 row-span-2 col-span-12 grid grid-cols-12  ">
+        <div className=" col-span-8 rounded-r-3xl">
+          <div className=" flex justify-center items-center rounded-3xl bg-cover bg-center " style={{ backgroundImage: "url('/partenaire4Projet.png')"}}>
             <Image
-              className="h-[100%]"
+              className=" w-[80%] rounded-3xl	 p-4"
               src={partenaire}
               alt="video fille souriante"
             />
           </div>
-          <div className="row-start-3 row-span-2 pb-4 ">
-            <h3 className="font-bold">
-              SYNTHESE DES ACTIVITES DE SENSIBILISATION DES STRUCTURES DE
-              PRECOLLECTE{" "}
+          <div className="mt-10 mb-10">
+            <h3 className="font-bold text-xl pb-4 text-center text-green-700/55">
+              Association chrétienne pour la promotion du développement intégré 
             </h3>
-            <p className="mt-2">
+            <p className="mt-1">
               Ce projet de réfection des bâtiments et de sensibilisation des
               élèves est une véritable bouffée d'air frais pour notre
               communauté. En travaillant main dans la main avec nos partenaires
@@ -53,6 +37,15 @@ const Projet4Partenaires = () => {
               notre communauté et ouvre de nouvelles perspectives pour nos
               enfants.
             </p>
+          </div>
+          <div className="mt-12 pt-4">
+            <Image 
+                src="/LOGO.png"
+                className="mt-12"
+                width={1200}
+                height={980}
+                alt="logo sponsors"              
+              />
           </div>
         </div>
         <aside className="col-end-13 col-span-3 bg-[#EDEDCB]/25">
@@ -69,8 +62,10 @@ const Projet4Partenaires = () => {
                 />
               </div>
               <p className="italic">
-                " Maintenant, je prends beaucoup mieux soin de mon environnement
-                "
+                " Avant, nos salles de classe étaient délabrées et tristes, mais maintenant, 
+                grâce à vous, tout est différent. 
+                Merci d'avoir pris soin de notre école et de nous avoir donné un endroit 
+                si merveilleux pour grandir, apprendre et rêver. " - Bébé Thiki
               </p>
             </div>
             <div className="mb-4 divide-y-4">
@@ -83,7 +78,11 @@ const Projet4Partenaires = () => {
                   className="mb-3 rounded-full"
                 />
               </div>
-              <p className="italic">" J'ai appris à trier mes déchets "</p>
+              <p className="italic">
+                "Avant, notre école était vieille et sombre. Mais maintenant, c'est comme si 
+                nous avions une toute nouvelle école ! Les salles de classe sont lumineuses et 
+                colorées, et il y a tellement d'espace pour jouer et apprendre." - Bébé Kirika              
+              </p>
             </div>
             <div className="divide-y-4">
               <div className="carousel-item  ">
@@ -96,8 +95,9 @@ const Projet4Partenaires = () => {
                 />
               </div>
               <p className="italic">
-                " Je suis contente d'avoir participé, je suis plus
-                consciencieuse. "
+                "Notre nouvelle école est incroyable ! J'adore les salles de classe modernes et 
+                les équipements que nous avons maintenant. Un grand merci à ceux qui ont travaillé 
+                si dur pour rendre notre école aussi spéciale." - Bébé Emi             
               </p>
             </div>
           </div>
@@ -107,4 +107,4 @@ const Projet4Partenaires = () => {
   );
 };
 
-export default Projet4Partenaires;
+export default Projet4Partenaire;
