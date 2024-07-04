@@ -3,19 +3,32 @@ import Link from "next/link";
 
 import Image from "next/image";
 import Dropdown from "@/components/Dropdown";
+import ProjectsByDate from "../projects_by_date/ProjectsByDate";
 
+const ProjetListe = () => {
+  return (
+    <>
+      <Dropdown />
+      <ProjectsByDate />
+    </>
 
-const ProjetListe= () => {
+    /*
+    <section
+      className="mt-10  mx-24 grid grid-rows-6 grid-cols-12 min-h-screen bg-cover"
+      style={{
+        backgroundImage: "url('./bckgd_Valeurs.png')",
+        backgroundSize: "100% 100%",
+      }}
+    >
+      <div className=" text-black text-lg row-end-1 col-end-2">
+        <Dropdown />
+      </div>
+      <ProjectsByDate />
 
-    return (
-      <section className="mt-10  mx-24 grid grid-rows-6 grid-cols-12 min-h-screen bg-cover" style={{ backgroundImage: "url('./bckgd_Valeurs.png')", backgroundSize: "100% 100%" }}>
-        <div className=" text-black text-lg row-end-1 col-end-2">
-          <Dropdown/>
-        </div>
         <div className=" row-start-1 row-end-2 col-start-4 col-span-5">
           <h2 className=" text-5xl text-center font-bold mb-8" style={{ fontFamily: "'Swanky and Moo Moo', cursive" }}>
             Nos Projets
-          </h2>  
+          </h2>
           <p>Depuis 2016 Palmier compte dans son actif une vingtaine de projets réalisés.</p>
         </div>
         <div className=" row-start-2 row-span-4 col-start-2 col-span-10 ">
@@ -36,11 +49,11 @@ const ProjetListe= () => {
                   <div className="  bg-amber-500 text-white text-center text-bold text-[17px] font-medium px-[8px] ml-4 mr-4 mt-4 pt-[5px] flex items-center ">
                     <p className="px-5">Gestion des déchets</p>
                   </div>
-                </figure>    
+                </figure>
                 <figcaption>
                   <div className=" mt-3 ml-2 text-center">
                     <p className="text-base text-gray-700 ">
-                      Début : 2016 
+                      Début : 2016
                     </p>
                     <p className="text-base text-gray-700 ">
                       Lieu : Parakou, Bénin
@@ -81,13 +94,13 @@ const ProjetListe= () => {
                      />
                   </div>
                   <div className="  bg-amber-500 text-white text-center text-bold text-[17px] font-medium px-[8px] ml-4 mr-4 mt-4 pt-[5px] flex items-center ">
-                    <p className="px-5">Réfection des latrines</p> 
+                    <p className="px-5">Réfection des latrines</p>
                   </div>
-                </figure>    
+                </figure>
                 <figcaption>
                   <div className=" mt-3 ml-2 text-center">
                     <p className="text-base text-gray-700 ">
-                      Début : 2017 
+                      Début : 2017
                     </p>
                     <p className="text-base text-gray-700 ">
                       Lieu : Parakou, Bénin
@@ -128,13 +141,13 @@ const ProjetListe= () => {
                      />
                   </div>
                   <div className="  bg-amber-500 text-white text-center text-bold text-[17px] font-medium px-[8px] ml-4 mr-4 mt-4 pt-[5px] flex items-center ">
-                    <p className="px-5">Permanence scolaire  </p> 
+                    <p className="px-5">Permanence scolaire  </p>
                   </div>
-                </figure>    
+                </figure>
                 <figcaption>
                   <div className=" mt-3 ml-2 text-center">
                     <p className="text-base text-gray-700 ">
-                      Début : 2017 
+                      Début : 2017
                     </p>
                     <p className="text-base text-gray-700 ">
                       Lieu : Vernier, Suisse
@@ -160,7 +173,7 @@ const ProjetListe= () => {
                   </div>
                 </figcaption>
               </Link>
-            </div> 
+            </div>
             <div className="max-w-sm m-2  rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full shadow-lg bg-[#B9DEC3] " style={{ maxWidth: '300px' }}>
               <Link href="/projet4">
                 <figure className="cursor-pointer ">
@@ -175,13 +188,13 @@ const ProjetListe= () => {
                      />
                   </div>
                   <div className="  bg-amber-500 text-white text-center text-bold text-[17px] font-medium px-[8px] ml-4 mr-4 mt-4 pt-[5px] flex items-center ">
-                    <p className="px-5">Réfection d’une école </p> 
+                    <p className="px-5">Réfection d’une école </p>
                   </div>
-                </figure>    
+                </figure>
                 <figcaption>
                   <div className=" mt-3 ml-2 text-center">
                     <p className="text-base text-gray-700 ">
-                      Début : 2018 
+                      Début : 2018
                     </p>
                     <p className="text-base text-gray-700 ">
                       Lieu : Nganda, Congo
@@ -217,7 +230,7 @@ const ProjetListe= () => {
               <button className="bg-[rgba(248,184,100,0.8)] hover:bg-amber-500 join-item btn">4</button>
           </div>
         </div>
-      </section>
+    </section> */
   );
 };
 
