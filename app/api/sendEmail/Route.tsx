@@ -8,13 +8,15 @@ export async function POST(request: any) {
   const password = process.env.NEXT_PUBLIC_BURNER_PASSWORD;
   const myEmail = process.env.NEXT_PUBLIC_PERSONAL_EMAIL;
 
-  const formData = await request.formData();
+  const { subject, myMessage } = await request.json();
 
-  const name = formData.get("nom_complet");
-  const email = formData.get("email");
-  const phone = formData.get("phone");
+  // const formData = await request.formData();
 
-  const message = formData.get("message");
+  // const name = formData.get("nom_complet");
+  // const email = formData.get("email");
+  // const phone = formData.get("phone");
+
+  // const message = formData.get("message");
 
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -34,17 +36,20 @@ export async function POST(request: any) {
     const mail = await transporter.sendMail({
       from: username,
       to: myEmail,
-      replyTo: email,
-      subject: `Website activity from ${email}`,
+      replyTo: "dev.ckap@gmail.com",
+      subject: `Website activity from `,
       html: `
-              <p>Name: ${name} </p>
-              <p>Email: ${email} </p>
-              <p>Message: ${message} </p>
+              <p>Name: ${subject} </p>
+              <p>Email:  </p>
+              <p>Message: ${myMessage} </p>
               `,
     });
     console.log("Email sent :: ", mail.response);
 
-    return NextResponse.json({ message: "Success: email was sent" });
+    return NextResponse.json(
+      { message: "Success: email was sent" },
+      { status: 200 },
+    );
   } catch (error) {
     console.log(error);
     NextResponse.json({ message: "COULD NOT SEND MESSAGE" });

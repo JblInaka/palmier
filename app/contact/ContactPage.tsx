@@ -1,22 +1,29 @@
 "use client";
 
 import React from "react";
+import { useState } from "react";
 
 import Image from "next/image";
 
 const ContactPage = () => {
+  const [subject, setSubject] = useState("");
+  const [myMessage, setMyMessage] = useState("");
+
   async function handleSubmit(event: any) {
     event.preventDefault();
-
     //const formData = new FormData(event.target);
-    const formData = new FormData(event.target);
+    //const formData = new FormData(event.target);
     try {
-      const response = await fetch("/api", {
+      const response = await fetch("/api/sendEmail", {
         headers: {
           "Content-Type": "application/json",
         },
         method: "POST",
-        body: formData,
+        //body: formData,
+        body: JSON.stringify({
+          subject,
+          myMessage,
+        }),
       });
       console.log("Response ", response);
 
@@ -54,6 +61,10 @@ const ContactPage = () => {
           <div>
             <label>Email:</label>
             <input
+              value={subject}
+              onChange={(e) => {
+                setSubject(e.target.value);
+              }}
               className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
               type="text"
               name="email"
@@ -72,8 +83,11 @@ const ContactPage = () => {
             <textarea
               id="w3review"
               name="message"
-              rows="4"
-              cols="50"
+              rows={4}
+              cols={50}
+              onChange={(e) => {
+                setMyMessage(e.target.value);
+              }}
               defaultValue="Enter your message here"
             ></textarea>
           </div>
