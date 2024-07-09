@@ -1,15 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 import Image from "next/image";
 import Dropdown from "@/components/Dropdown";
 import ProjectsByDate from "../projects_by_date/ProjectsByDate";
+import ProjetsCongo from "../projects_by_country/ProjetsCongo";
+import ProjetsSuisse from "../projects_by_country/ProjetsSuisse";
+import ProjetsBenin from "../projects_by_country/ProjetsBenin";
 
 const ProjetListe = () => {
+  const [getSelectedValue, setGetSelectedValue] = useState("tous");
+
+  const getSelectedValueFromChild = (value: any) => {
+    setGetSelectedValue(value);
+  };
+
+  let projetToShow: any;
+
+  if (getSelectedValue === "congo") {
+    projetToShow = <ProjetsCongo />;
+  } else if (getSelectedValue === "benin") {
+    projetToShow = <ProjetsBenin />;
+  } else if (getSelectedValue === "suisse") {
+    projetToShow = <ProjetsSuisse />;
+  } else {
+    projetToShow = <ProjectsByDate />;
+  }
+
   return (
     <>
-      <Dropdown />
-      <ProjectsByDate />
+      <Dropdown onSelectChange={getSelectedValueFromChild} />
+      {projetToShow}
     </>
 
     /*

@@ -1,19 +1,31 @@
-import * as React from 'react';
+import * as React from "react";
+import { useState } from "react";
 
-const Dropdown = () => {
+const Dropdown = ({ onSelectChange }: any) => {
+  const [selectedValue, setSelectedValue] = useState("tous");
 
- return (
+  // function getSelectedValue = () => {
+  //   console.log(selectedValue);
+  // }
 
-   <div >
-      <select className=' rounded-3xl text-white font-semibold bg-amber-500 px-3 py-3 '>
-        <option value="fruit" >Tous les projets</option>
-        <option value="vegetable">Bénin</option>
-        <option value="meat">RD Congo</option>
+  return (
+    <div>
+      <select
+        value={selectedValue}
+        onChange={(e) => {
+          console.log("Selected value ", e.target.value);
+          onSelectChange(e.target.value);
+          setSelectedValue(e.target.value);
+        }}
+        className=" rounded-3xl text-white font-semibold bg-amber-500 px-3 py-3 "
+      >
+        <option value="tous">Tous les projets</option>
+        <option value="benin">Bénin</option>
+        <option value="suisse">Suisse</option>
+        <option value="congo">RD Congo</option>
       </select>
-   </div>
-
- );
-
+    </div>
+  );
 };
 
 export default Dropdown;

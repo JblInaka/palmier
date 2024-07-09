@@ -6,6 +6,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 const ContactPage = () => {
+  /*
   const [subject, setSubject] = useState("");
   const [myMessage, setMyMessage] = useState("");
 
@@ -42,61 +43,17 @@ const ContactPage = () => {
       alert("Error, please try resubmitting the form");
     }
   }
-
+*/
   return (
     <div
-      className="grid grid-cols-12 gap-2 mx-24 mt-14 min-h-screen bg-cover"
+      className="mx-24 mt-64 min-h-screen bg-cover text-center"
       style={{ backgroundImage: "url('./motif_background.png')" }}
     >
-      <>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label>Nom complet:</label>
-            <input
-              className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-              type="text"
-              name="nom_complet"
-            />
-          </div>
-          <div>
-            <label>Email:</label>
-            <input
-              value={subject}
-              onChange={(e) => {
-                setSubject(e.target.value);
-              }}
-              className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-              type="text"
-              name="email"
-            />
-          </div>
-          <div>
-            <label>Phone:</label>
-            <input
-              className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-              type="text"
-              name="phone"
-            />
-          </div>
-          <div>
-            <label>Message:</label>
-            <textarea
-              id="w3review"
-              name="message"
-              rows={4}
-              cols={50}
-              onChange={(e) => {
-                setMyMessage(e.target.value);
-              }}
-              defaultValue="Enter your message here"
-            ></textarea>
-          </div>
-          <div>
-            <button type="submit">Soumettre</button>
-            {/*<input type="submit" value="Soumettre" />  */}
-          </div>
-        </form>
-      </>
+      <p>
+        Vous pouvez nous contacter au: <i>Numéro de téléphone</i>{" "}
+      </p>
+      <p>Email: ... </p>
+      <p>Adresse: </p>
     </div>
   );
 };
