@@ -5,12 +5,12 @@ const Projet4Partenaire = () => {
   const partenaire = require("../../public/projets/projet4/projet4_partenaires.jpeg");
 
   return (
-    <section className=" mx-24 grid grid-cols-12 min-h-screen bg-cover rounded-3xl" style={{backgroundImage: "url('./BAD.png')", backgroundSize: "100% 100%"}}>
-      <h2 className="row-1 col-span-12 text-5xl text-justify font-bold mb-14" style={{ fontFamily: "'Swanky and Moo Moo', cursive" }} >
+    <section className=" md:pt-9 mx-3 md:mx-24 grid grid-cols-12 md:min-h-screen bg-cover rounded-3xl" style={{backgroundImage: "url('./BAD.png')", backgroundSize: "100% 100%"}}>
+      <h2 className="row-1 col-span-12 text-4xl md:text-5xl text-justify font-bold mb-3 md:mb-14" style={{ fontFamily: "'Swanky and Moo Moo', cursive" }} >
         Partenaires locaux
       </h2>
       <div className="row-2 row-span-2 col-span-12 grid grid-cols-12  ">
-        <div className=" col-span-8 rounded-r-3xl">
+        <div className=" col-span-12 md:col-span-8 rounded-r-3xl">
           <div className=" flex justify-center items-center rounded-3xl bg-cover bg-center " style={{ backgroundImage: "url('/partenaire4Projet.png')"}}>
             <Image
               className=" w-[80%] rounded-3xl	 p-4"
@@ -18,11 +18,11 @@ const Projet4Partenaire = () => {
               alt="video fille souriante"
             />
           </div>
-          <div className="mt-10 mb-10">
+          <div className="md:mt-10 md:mb-10">
             <h3 className="font-bold text-xl pb-4 text-center text-green-700/55">
               Association chrétienne pour la promotion du développement intégré 
             </h3>
-            <p className="mt-1">
+            <p className="md:mt-1">
               Ce projet de réfection des bâtiments et de sensibilisation des
               élèves est une véritable bouffée d'air frais pour notre
               communauté. En travaillant main dans la main avec nos partenaires
@@ -41,14 +41,14 @@ const Projet4Partenaire = () => {
           <div className="mt-12 pt-4">
             <Image 
                 src="/LOGO.png"
-                className="mt-12"
+                className="md:mt-12"
                 width={1200}
                 height={980}
                 alt="logo sponsors"              
               />
           </div>
         </div>
-        <aside className="col-end-13 col-span-3 bg-[#EDEDCB]/25">
+        <aside className="col-end-13 col-span-3 bg-[#EDEDCB]/25 hidden md:block">
           <h2 className="text-center text-xl font-bold">Temoignages</h2>
           <div className=" h-[90%] w-[90%] carousel carousel-vertical max-w-md mt-4 p-4 ml-4 space-x-4 flex items-justify items-center ">
             <div className="mb-5 divide-y-4">

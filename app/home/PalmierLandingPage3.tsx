@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,7 +6,7 @@ import Link from "next/link";
 const PalmierLandingPage3 = () => {
     return(
         <>
-        <section className="mt-15 ">
+        <section className="mt-15 hidden sm:block">
             <div className="px-1 py-1 bg-white mt-12 ml-0 mr-0 rounded-full border-[2px] h-[94px] w-full border-[#B9DEC3]">
                     <div className="h-full flex justify-center items-center space-x-40 rounded-full bg-[#B9DEC3] w-[100%]">
                         <p className="text-xl">
@@ -20,10 +21,10 @@ const PalmierLandingPage3 = () => {
                 </div>
             </div>
         </section>    
-        <section className="mt-10 min-h-screen">
+        <section className="md:mt-10 md:min-h-screen">
             <div className="  mt-0 mb-10 flex justify-center items-center ">
-                    <h2 className=" text-5xl text-justify font-bold py-7 " style={{ fontFamily: "'Swanky and Moo Moo', cursive" }}>
-                        Donnez vie à nos projets    
+            <h2 className="text-4xl md:text-5xl text-center font-bold" style={{ fontFamily: "'Swanky and Moo Moo', cursive" }}>
+            Donnez vie à nos projets    
                     </h2>            
             </div>      
             <div className=" bg-cover bg-center  w-full" style={{ backgroundImage: "url('bckGdS3.png')", backgroundSize: "100% 100%" }}>
@@ -39,7 +40,7 @@ const PalmierLandingPage3 = () => {
                                         height={1}
                                         alt="projet phare"
                                     />
-                                    <a href="#" className=" absolute top-[10px] right-[10px] bg-[rgba(248,184,100,0.8)] text-white text-[14px] font-medium px-[10px] py-[5px] flex items-center">
+                                    <div  className=" absolute top-[10px] right-[10px] bg-[rgba(248,184,100,0.8)] text-white text-[14px] font-medium px-[10px] py-[5px] flex items-center">
                                         Faire un don
                                         <svg
                                             className="flex-shrink-0 size-4"
@@ -55,7 +56,7 @@ const PalmierLandingPage3 = () => {
                                             <path d="M5 12h14"></path>
                                             <path d="m12 5 7 7-7 7"></path>
                                         </svg>
-                                    </a>
+                                    </div>
                                 </div>
                                 <div className="bg-white rounded-xl shadow-sm overflow-hidden p-1 ">
                                     <div className="relative h-2 flex items-center justify-center ">
@@ -63,7 +64,7 @@ const PalmierLandingPage3 = () => {
                                         <div className="relative text-amber-500  text-xs">40%</div>
                                     </div>
                                 </div>
-                                <div className="absolute  bg-amber-500 text-white text-bold text-[17px] font-medium px-[10px] ml-4 mt-4 pt-[5px] flex items-center">Réfection d’une école </div>
+                                <div className="absolute  bg-amber-500 text-white text-bold text-[17px] font-medium px-[10px] ml-4 mt-4 pt-[5px] flex items-center">Réfection école </div>
                             </figure>    
                             <figcaption>
                                 <div className="pl-10 py-12 mt-3 ml-2">
@@ -88,7 +89,7 @@ const PalmierLandingPage3 = () => {
                                         height={1}
                                         alt="projet phare"
                                     />
-                                    <a href="#" className=" absolute top-[10px] right-[10px] bg-[rgba(248,184,100,0.8)] text-white text-[14px] font-medium px-[10px] py-[5px] flex items-center">
+                                    <div className=" absolute top-[10px] right-[10px] bg-[rgba(248,184,100,0.8)] text-white text-[14px] font-medium px-[10px] py-[5px] flex items-center">
                                         Faire un don
                                         <svg
                                             className="flex-shrink-0 size-4"
@@ -104,7 +105,7 @@ const PalmierLandingPage3 = () => {
                                             <path d="M5 12h14"></path>
                                             <path d="m12 5 7 7-7 7"></path>
                                         </svg>
-                                    </a>
+                                    </div>
                                 </div>
                                 <div className="bg-white rounded-xl shadow-sm overflow-hidden p-1 ">
                                     <div className="relative h-2 flex items-center justify-center ">
@@ -112,7 +113,7 @@ const PalmierLandingPage3 = () => {
                                         <div className="relative text-white  text-xs">70%</div>
                                     </div>
                                 </div>
-                                <div className="absolute  bg-amber-500 text-white text-bold text-[17px] font-medium px-[10px] ml-8 mr-2 mt-4 pt-[5px] flex items-center">Réfection des latrines </div>
+                                <div className="absolute  bg-amber-500 text-white text-bold text-[17px] font-medium px-[10px] ml-4 mt-4 pt-[5px] flex items-center"> latrines neuves</div>
                             </figure>    
                             <figcaption>
                                 <div className="pl-10 py-12 mt-3 ml-2">

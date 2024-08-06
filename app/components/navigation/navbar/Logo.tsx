@@ -20,7 +20,7 @@ const Logo = () => {
 
   // change between the logo and the button when the user scrolls
   const [showButton, setShowButton] = useState(false);
-
+/*
   const changeNavButton = () => {
     if (window.scrollY >= 400 && window.innerWidth < 768) {
       setShowButton(true);
@@ -31,11 +31,11 @@ const Logo = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeNavButton);
-  }, []);
+  }, []);*/
 
   return (
     <>
-      <Link href="/landing_page" style={{ display: showButton ? "none" : "block" }}>
+      <Link href="/home" style={{ display: showButton ? "none" : "block" }}>
         <Image
           src="/logoPalmier.png"
           alt="Logo"
@@ -44,13 +44,13 @@ const Logo = () => {
           className="relative"
         />
       </Link>
-      <div
+     {/* <div
         style={{
           display: showButton ? "block" : "none",
         }}
       >
         <Button />
-      </div>
+      </div> */} 
     </>
   );
 };

@@ -5,12 +5,12 @@ const Projet1Partenaire = () => {
   const partenaire = require("../../public/projets/projet2/projet2partneraire.png");
 
   return (
-    <section className=" mx-24 grid grid-cols-12 min-h-screen bg-cover rounded-3xl" style={{backgroundImage: "url('./BAD.png')", backgroundSize: "100% 100%"}}>
-      <h2 className="row-1 col-span-12 text-5xl text-justify font-bold mb-14" style={{ fontFamily: "'Swanky and Moo Moo', cursive" }}    >
+    <section className=" mx-3 md:mx-24 grid grid-cols-12 md:min-h-screen bg-cover rounded-3xl" style={{backgroundImage: "url('./BAD.png')", backgroundSize: "100% 100%"}}>
+      <h2 className="row-1 col-span-12 text-3xl md:text-5xl text-justify font-bold mb-14" style={{ fontFamily: "'Swanky and Moo Moo', cursive" }}    >
         Partenaires locaux
       </h2>
-      <div className="row-2 row-span-2 col-span-12 grid grid-cols-12  ">
-        <div className=" col-span-8 rounded-r-3xl">
+      <div className="row-2 row-span-2 col-span-12 grid grid-cols-12 py-2">
+        <div className="col-span-12 md:col-span-8 rounded-r-3xl">
           <div className=" flex justify-center items-center  bg-cover bg-center " style={{ backgroundImage: "url('/partenaire2Projet.png')"}}>
             <Image
               className=" w-[90%] h-[70%]"
@@ -43,14 +43,14 @@ const Projet1Partenaire = () => {
           <div className="mt-12 pt-4">
             <Image 
                 src="/LOGO.png"
-                className="mt-12"
+                className="w-full max-w-[600px] md:max-w-[800px] h-auto"
                 width={1200}
                 height={980}
                 alt="logo sponsors"              
               />
           </div>
         </div>
-        <aside className="col-end-13 col-span-3 bg-[#EDEDCB]/25">
+        <aside className="col-end-13 col-span-3 bg-[#EDEDCB]/25 hidden md:block">
           <h2 className="text-center text-xl font-bold">Temoignages</h2>
           <div className=" h-[90%] w-[90%] carousel carousel-vertical max-w-md mt-4 p-4 ml-4 space-x-4 flex items-justify items-center ">
             <div className="mb-5 divide-y-4">

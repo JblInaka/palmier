@@ -1,47 +1,39 @@
+"use client"
 import Link from "next/link";
+import { useState } from "react";
 
-const Sidebar = ({
-  isOpen,
-  toggle,
-}: {
-  isOpen: boolean;
-  toggle: () => void;
-}): JSX.Element => {
+const Sidebar = ({ isOpen, toggle }: { isOpen: boolean; toggle: () => void }) => {
   return (
-    <>
-      <div
-        className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white grid pt-[120px] left-0 z-10"
-        style={{
-          opacity: `${isOpen ? "1" : "0"}`,
-          top: ` ${isOpen ? "0" : "-100%"}`,
-        }}
-      >
-        <button className="absolute right-0 p-5" onClick={toggle}>
-        {/* Close icon */}
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"> 
-            <path
-              fill="currentColor"
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
+    <div className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 transform ${
+        isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out`}>
+      <div className="w-64 h-full bg-white p-5">
+        <button className="text-right mb-4" onClick={toggle}>
+          Fermer
         </button>
-
-        <ul className="sidebar-nav text-center leading-relaxed text-xl">
-          <li>
-            <Link href="/about" onClick={toggle}><p>Acceuil</p></Link>
+        <ul className="flex flex-col gap-y-5 text-black text-base font-bold">
+          <li className="hover:text-green-600">
+            <Link href="/home">
+              <p>Acceuil</p>
+            </Link>
           </li>
-          <li>
-            <Link href="/apropos" onClick={toggle}><p>À Propos</p></Link>
+          <li className="hover:text-green-600">
+            <Link href="/apropos">
+              <p>À Propos</p>
+            </Link>
           </li>
-          <li>
-            <Link href="/services" onClick={toggle}><p>Projets</p></Link>
+          <li className="hover:text-green-600">
+            <Link href="/projet">
+              <p>Projets</p>
+            </Link>
           </li>
-          <li>
-            <Link href="/contacts" onClick={toggle}><p>Contacts</p></Link>
+          <li className="hover:text-green-600">
+            <Link href="/contact">
+              <p>Contact</p>
+            </Link>
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 

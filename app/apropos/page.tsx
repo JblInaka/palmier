@@ -11,14 +11,12 @@ import AProposStatisques from "./AproposStatistiques";
 export default function APropos() {
   return (
     <>
-      <div>
-        <AProposPresentation />
-        <AProposGoal/>
-        <AProposStatisques />
-        <AProposValeurs />
-        <AProposVision />
-        <AProposEquipe />
-      </div>
+      <AProposPresentation />
+      <AProposGoal/>
+      <AProposStatisques />
+      <AProposValeurs />
+      <AProposVision />
+      <AProposEquipe />
     </>
   );
 }

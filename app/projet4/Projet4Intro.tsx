@@ -7,9 +7,9 @@ const Projet3Intro = () => {
   const intro = require("../../public/projets/projet4/projet4_intro.png");
 
   return (
-    <section className=" mx-24 mb-10 min-h-screen bg-cover grid grid-rows-3 " >
+    <section className=" mt-0 md:mt-10 mx-0 md:mx-24 md:mb-10 md:min-h-screen bg-cover grid md:grid-rows-3 " >
       <div className="col-span-12 row-span-2 flex justify-end items-end bg-cover object-cover bg-no-repeat " style={{ backgroundImage: "url('/projet4IntroBckgd.png')"}} >
-        <div className="  ">
+        <div className=" w-[100%] md:w-[70%] pt-12">
           <Image
             src={intro}
             className=" w-[100%] rounded-tl-full	"
@@ -19,13 +19,13 @@ const Projet3Intro = () => {
       </div>
 
       <div className="col-span-12 px-4">
-        <div className="bg-white rounded-xl shadow-sm overflow-hidden mt-5 col-span-12 border-amber-500 border">
+        <div className="bg-white rounded-xl shadow-sm overflow-hidden mt-5 col-span-12 border-amber-500 border hidden sm:block">
           <div className="relative h-6 flex items-center justify-center ">
             <div className="absolute top-0 bottom-0 left-0 rounded-lg w-[80%] bg-amber-500"></div>
             <div className="relative text-white font-medium text-sm pl-20 ml-20">80% - réalisé</div>
           </div>
         </div>
-        <h2 className="mt-3 font-bold text-center text-4xl " style={{fontFamily: "'Swanky and Moo Moo', cursive" }}>
+        <h2 className="mt-3 font-bold text-center text-3xl md:text-4xl " style={{fontFamily: "'Swanky and Moo Moo', cursive" }}>
           Réfection des bâtiments d'école et sensibilisation des élèves
         </h2>  
         <p className="mt-4  ">
