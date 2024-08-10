@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Projet3Solution = () => {
 
-  const projet4Solution = require("../../public/projet4Solution.jpeg");
+  const projet4Solution = require("../../public/Projet4Solution.jpeg");
 
   return (
 <section className="mx-3 md:mx-24  md:min-h-screen md:mt-12 gap-2 " >

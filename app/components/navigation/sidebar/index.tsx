@@ -12,22 +12,22 @@ const Sidebar = ({ isOpen, toggle }: { isOpen: boolean; toggle: () => void }) =>
         </button>
         <ul className="flex flex-col gap-y-5 text-black text-base font-bold">
           <li className="hover:text-green-600">
-            <Link href="/home">
+            <Link href="/home" onClick={toggle}>
               <p>Acceuil</p>
             </Link>
           </li>
           <li className="hover:text-green-600">
-            <Link href="/apropos">
+            <Link href="/apropos" onClick={toggle}>
               <p>À Propos</p>
             </Link>
           </li>
           <li className="hover:text-green-600">
-            <Link href="/projet">
+            <Link href="/projet" onClick={toggle}>
               <p>Projets</p>
             </Link>
           </li>
           <li className="hover:text-green-600">
-            <Link href="/contact">
+            <Link href="/contact" onClick={toggle}>
               <p>Contact</p>
             </Link>
           </li>

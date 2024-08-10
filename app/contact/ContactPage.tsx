@@ -23,8 +23,7 @@ const ContactPage = () => {
     </div>
     <div className="flex-1 mt-8 mb-6">
       <iframe className="w-full h-full rounded-3xl"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
-        aria-hidden="false">
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5520.825392474968!2d6.116711599999999!3d46.2221371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6496a147e3f9%3A0x81f58a59c081fc24!2sChem.%20des%20Coudriers%2021%2C%201216%20Le%20Grand-Saconnex!5e0!3m2!1sfr!2sch!4v1723036927935!5m2!1sfr!2sch" loading="lazy" >
       </iframe>
     </div>
   </div>

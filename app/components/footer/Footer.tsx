@@ -14,7 +14,7 @@ const TopBar = () => {
           <div className="flex items-center justify-center text-topBarColor h-7 w-7 rounded-full bg-gray-200 mr-1">
             <HiOutlinePhone size={20} />
           </div>
-          <span className="text-base mr-3">+41774094631</span>
+          <span className="text-base mr-3">+41786492314</span>
         </div>
         <div className="flex items-center mb-2 md:mb-0">
           <div className="flex items-center justify-center text-topBarColor h-7 w-7 rounded-full bg-gray-200 mr-1 ml-1">
